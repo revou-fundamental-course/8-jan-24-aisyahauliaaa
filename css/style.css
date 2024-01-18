@@ -20,22 +20,26 @@ header p {
     margin-bottom: 15px;
 }
 
-.inputSection {
-    display: flex;
-    flex-direction: column;
+h5 {
+    margin-top: -12%;
+    font-size: larger;
+    margin-bottom: 0%;
 }
-
-#squareSide {
-    margin-top: 10px;
-    outline: none;
-    border-radius: 8px;
-    border:solid #f5a4f1;
-    padding: 5px;
-}
-
-#squareSide:focus {
-    border:solid #f5a4f1;
-}
+svg {
+margin-left: 40%;
+    width: 400px;
+    height:400px;
+    fill: #f7f7f7;
+    stroke-width: 5px; 
+    stroke: #8c74bb;
+  } 
+  select {
+    margin-top: -20%;
+  }
+ #side {
+  
+    width: 50%;
+ }
 
 button {
     background-color: #33186B;
@@ -46,3 +50,15 @@ button {
     cursor: pointer;
 
 }
+
+button:hover {
+    background-color: #33186B;
+}
+button:disabled{
+    background-color: #33186B;
+}
+button:active {
+    background-color: #1e005a;
+    transform: translateY(2px);
+}
+
