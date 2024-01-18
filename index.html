@@ -13,13 +13,27 @@
         <p>Web ini digunakan untuk menghitung Luas dan Keliling dPersegi dalam rangka menyelesaikan mini project RevoU</p>
     </header>
 
-    <div class="inputSection">
-        <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
-        <input type="number" id="squareSide">
-    </div>
-    <div class="buttons">
-        <button id="countButton">Hitung</button>
-        <button id="resetButton" >Reset</button>
-    </div>
+       <svg>
+        <rect x="2" y="2" width="200" height="200" />
+      </svg>
+    <form id="square-calculator">
+        <label for="choice"><h5>Pilihlah yang ingin anda hitung:</h5></label>
+        <br>
+        <select id="choice">
+            <option value="area">Luas</option>
+            <option value="perimeter">Keliling</option>
+        </select>
+        <br><br>
+        <label for="side">Masukan sisi persegi:</label> <br>
+        <input type="number" id="side" name="side">
+        <br><br>
+        <button type="submit">Hitung</button>
+        <button type="reset">Reset</button>
+    </form>
+    <p id="result"></p>
+
+      
+   
 </body>
+<script src="js/index.js"></script>
 </html>
